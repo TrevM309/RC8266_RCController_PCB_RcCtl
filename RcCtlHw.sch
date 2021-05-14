@@ -924,4 +924,6 @@ F 3 "" H 6300 2700 60  0001 C CNN
 	1    6650 2200
 	1    0    0    -1  
 $EndComp
+Text Notes 2300 4650 0    50   ~ 0
+Move SW other side of reg
 $EndSCHEMATC
