@@ -381,30 +381,14 @@ Wire Wire Line
 	7300 4000 7300 4500
 Wire Wire Line
 	7300 4900 7300 5000
-Connection ~ 4850 4400
-Wire Wire Line
-	4850 4200 4850 4400
-Wire Wire Line
-	5600 4200 4850 4200
-Wire Wire Line
-	5250 4700 5250 4800
-Connection ~ 5250 4700
-Wire Wire Line
-	5150 4700 5250 4700
 Wire Wire Line
 	4950 4400 4950 4500
 Wire Wire Line
-	4850 4400 4850 4500
-Wire Wire Line
-	4750 4500 4750 4400
-Wire Wire Line
-	4750 4400 4850 4400
-Wire Wire Line
-	4950 4400 5350 4400
+	4950 4400 5450 4400
 Wire Wire Line
 	7200 4100 7650 4100
 Wire Wire Line
-	5150 4800 5250 4800
+	5150 4800 5350 4800
 Wire Wire Line
 	6500 4100 6400 4100
 $Comp
@@ -474,12 +458,12 @@ F 3 "~" H 10450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 4900 5350 5050
-Connection ~ 5350 4900
+	5450 4900 5450 5050
+Connection ~ 5450 4900
 Wire Wire Line
-	5150 4900 5350 4900
+	5150 4900 5450 4900
 Wire Wire Line
-	5350 4400 5350 4900
+	5450 4400 5450 4900
 $Comp
 L TrevM:Joystick U4
 U 1 1 609ED74B
@@ -512,9 +496,6 @@ Text Notes 10000 5300 2    39   ~ 0
 Need 1A buck regulator to get 3V3 from LiPo battery
 Text Notes 9450 5200 2    39   ~ 0
 ESP-M2 takes 600 mA max
-Connection ~ 5700 1300
-Wire Wire Line
-	5600 1300 5700 1300
 Connection ~ 5900 2600
 Wire Wire Line
 	5900 2600 5300 2600
@@ -556,8 +537,6 @@ Wire Wire Line
 	8250 2600 8450 2600
 Wire Wire Line
 	5300 3000 5300 3100
-Wire Wire Line
-	5600 1700 5600 4200
 $Comp
 L TrevM:ADS1015 U3
 U 1 1 6091079B
@@ -602,46 +581,19 @@ Wire Wire Line
 	10250 2850 7950 2850
 Text Label 10250 2750 2    39   ~ 0
 2V8_BackLight
-Connection ~ 5600 1300
-Wire Wire Line
-	5600 1300 5500 1300
-Wire Wire Line
-	5600 1300 5600 1400
-$Comp
-L Device:R R4
-U 1 1 609528AC
-P 5500 1550
-F 0 "R4" V 5550 1650 50  0000 L CNN
-F 1 "10K" V 5550 1300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5430 1550 50  0001 C CNN
-F 3 "~" H 5500 1550 50  0001 C CNN
-	1    5500 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 1300 5900 1300
 Wire Wire Line
 	5700 1300 5700 1400
 $Comp
-L Device:R R5
-U 1 1 6094C4A2
-P 5600 1550
-F 0 "R5" V 5650 1650 50  0000 L CNN
-F 1 "10K" V 5650 1300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5530 1550 50  0001 C CNN
-F 3 "~" H 5600 1550 50  0001 C CNN
-	1    5600 1550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Power:GND #PWR09
 U 1 1 6093A1CB
-P 5350 5050
-F 0 "#PWR09" H 5350 4800 50  0001 C CNN
-F 1 "GND" H 5355 4877 50  0000 C CNN
-F 2 "" H 5350 5050 50  0001 C CNN
-F 3 "" H 5350 5050 50  0001 C CNN
-	1    5350 5050
+P 5450 5050
+F 0 "#PWR09" H 5450 4800 50  0001 C CNN
+F 1 "GND" H 5455 4877 50  0000 C CNN
+F 2 "" H 5450 5050 50  0001 C CNN
+F 3 "" H 5450 5050 50  0001 C CNN
+	1    5450 5050
 	1    0    0    -1  
 $EndComp
 Connection ~ 8250 2600
@@ -866,20 +818,13 @@ Connection ~ 8350 4000
 Wire Wire Line
 	8350 3350 8350 4000
 Wire Wire Line
-	5600 4200 6300 4200
-Wire Wire Line
 	6300 4200 6300 4400
-Connection ~ 5600 4200
 Wire Wire Line
 	6300 4400 6500 4400
-Wire Wire Line
-	5250 4300 5500 4300
 Wire Wire Line
 	6200 4300 6200 4500
 Wire Wire Line
 	6200 4500 6500 4500
-Wire Wire Line
-	5250 4300 5250 4700
 Wire Wire Line
 	7650 2300 7650 4100
 Wire Wire Line
@@ -888,11 +833,6 @@ Connection ~ 6400 4300
 Wire Wire Line
 	7350 2600 7950 2600
 NoConn ~ 5950 2300
-Connection ~ 5500 4300
-Wire Wire Line
-	5500 4300 6200 4300
-Wire Wire Line
-	5500 1700 5500 4300
 Wire Wire Line
 	10250 3450 8250 3450
 Connection ~ 8250 3450
@@ -918,7 +858,25 @@ Wire Wire Line
 Wire Wire Line
 	5700 2100 5950 2100
 Wire Wire Line
-	5500 1400 5500 1300
-Wire Wire Line
 	5300 2700 5300 2600
+Wire Wire Line
+	4850 4200 6300 4200
+Wire Wire Line
+	5350 4300 6200 4300
+Wire Wire Line
+	4850 4200 4850 4500
+Wire Wire Line
+	5350 4300 5350 4800
+Wire Wire Line
+	4050 3750 4750 3750
+Wire Wire Line
+	4750 3750 4750 4500
+Connection ~ 4050 3750
+Wire Wire Line
+	5150 4700 5250 4700
+Wire Wire Line
+	5250 4700 5250 3750
+Wire Wire Line
+	5250 3750 4750 3750
+Connection ~ 4750 3750
 $EndSCHEMATC
