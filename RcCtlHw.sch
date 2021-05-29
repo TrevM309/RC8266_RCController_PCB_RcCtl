@@ -91,7 +91,7 @@ F 1 "LED_RCGB" H 4000 1724 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm-4_RGB" H 4000 2050 50  0001 C CNN
 F 3 "~" H 4000 2050 50  0001 C CNN
 	1    4000 2100
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2550 1600 2650 1600
@@ -128,7 +128,6 @@ Wire Wire Line
 	3550 2000 3550 2100
 Wire Wire Line
 	3550 2100 3800 2100
-NoConn ~ 3800 2300
 NoConn ~ 2150 1800
 NoConn ~ 2150 1900
 NoConn ~ 2150 2000
@@ -879,4 +878,5 @@ Wire Wire Line
 Wire Wire Line
 	5250 3750 4750 3750
 Connection ~ 4750 3750
+NoConn ~ 3800 2300
 $EndSCHEMATC
