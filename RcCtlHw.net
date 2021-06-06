@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source E:\Projects\RC\RC8266Controller\PCB_RcCtl\RcCtlHw.sch)
-    (date "28/05/2021 22:19:58")
+    (date "06/06/2021 15:18:09")
     (tool "Eeschema (5.1.7)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -51,7 +51,7 @@
       (tstamp 609DE998))
     (comp (ref D1)
       (value LED_RCGB)
-      (footprint LED_THT:LED_D5.0mm-4_RGB)
+      (footprint TrevM:LED_D5.0mm-4_RGB-RIGHT)
       (datasheet ~)
       (libsource (lib Device) (part LED_RCGB) (description "RGB LED, red/cathode/green/blue"))
       (sheetpath (names /) (tstamps /))
