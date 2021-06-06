@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source E:\Projects\RC\RC8266Controller\PCB_RcCtl\RcCtlHw.sch)
-    (date "06/06/2021 15:18:09")
+    (date "06/06/2021 19:43:00")
     (tool "Eeschema (5.1.7)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -120,7 +120,7 @@
       (tstamp 609DA52D))
     (comp (ref J2)
       (value Program)
-      (footprint Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical)
+      (footprint TrevM:PinHeader_1x06_P2.54mm_Vertical_bent)
       (datasheet ~)
       (libsource (lib conn) (part Conn_01x06_Male) (description "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
