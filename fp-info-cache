@@ -1,4 +1,4 @@
-19072539243735691
+19079033963940688
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82306,6 +82306,13 @@ ESP-M2_DOIT
 16
 16
 TrevM
+ESP-M2_DOIT_sm
+
+
+0
+16
+16
+TrevM
 ESP-WROOM-32
 
 
@@ -82398,6 +82405,13 @@ Through hole pin header THT 1x06 2.54mm single row
 6
 TrevM
 PinHeader_1x06_P2.54mm_Vertical_bent
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+6
+6
+TrevM
+PinHeader_1x06_P2.54mm_Vertical_bentR
 Through hole straight pin header, 1x06, 2.54mm pitch, single row
 Through hole pin header THT 1x06 2.54mm single row
 0
@@ -82530,6 +82544,13 @@ SlideSwitch
 3
 3
 TrevM
+Switch_spst_pcb
+
+
+0
+3
+3
+TrevM
 TerminalBlock-3_P5.08mm
 simple 5-pin terminal block, pitch 5.08mm, revamped version of bornier5
 terminal block bornier5
@@ -82563,6 +82584,13 @@ USB_micro1
 
 0
 9
+6
+TrevM
+USB_micro_vertical
+
+
+0
+7
 6
 TrevM
 VR_PoV3Z2

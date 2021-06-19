@@ -363,13 +363,9 @@ $EndComp
 Connection ~ 7300 5000
 Wire Wire Line
 	7300 5100 7300 5000
-Connection ~ 7650 4300
+Connection ~ 7850 4300
 Wire Wire Line
-	7650 4600 7650 4300
-Wire Wire Line
-	7650 4900 7650 5000
-Wire Wire Line
-	7300 5000 7650 5000
+	7850 4600 7850 4300
 Wire Wire Line
 	7300 4500 7300 4600
 Connection ~ 7300 4500
@@ -414,13 +410,13 @@ F 3 "~" H 7300 3850 50  0001 C CNN
 $EndComp
 Text Label 8550 1800 2    39   ~ 0
 3V3
-Connection ~ 7550 1300
+Connection ~ 7650 1300
 Wire Wire Line
 	7950 1800 8550 1800
 Wire Wire Line
 	7950 1300 7950 1800
 Wire Wire Line
-	7550 1300 7950 1300
+	7650 1300 7950 1300
 $Comp
 L conn:Conn_01x06_Male J2
 U 1 1 60989217
@@ -444,7 +440,7 @@ F 3 "" H 7300 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 1900 8550 1900
+	7650 1900 8550 1900
 $Comp
 L conn:Conn_01x08_Female J3
 U 1 1 60A31110
@@ -496,8 +492,6 @@ Need 1A buck regulator to get 3V3 from LiPo battery
 Text Notes 9450 5200 2    39   ~ 0
 ESP-M2 takes 600 mA max
 Connection ~ 5900 2600
-Wire Wire Line
-	5900 2600 5300 2600
 Connection ~ 8700 3350
 Wire Wire Line
 	8350 3350 8700 3350
@@ -534,8 +528,6 @@ Wire Wire Line
 	7950 2850 7950 2600
 Wire Wire Line
 	8250 2600 8450 2600
-Wire Wire Line
-	5300 3000 5300 3100
 $Comp
 L TrevM:ADS1015 U3
 U 1 1 6091079B
@@ -548,16 +540,16 @@ F 3 "" H 6850 4600 39  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 4300 7650 4300
+	7200 4300 7850 4300
 $Comp
 L Device:C C6
 U 1 1 60930EB5
-P 7650 4750
-F 0 "C6" H 7765 4796 50  0000 L CNN
-F 1 "u1" H 7765 4705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7688 4600 50  0001 C CNN
-F 3 "~" H 7650 4750 50  0001 C CNN
-	1    7650 4750
+P 7850 4750
+F 0 "C6" H 7850 4850 50  0000 L CNN
+F 1 "100n" H 7850 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7888 4600 50  0001 C CNN
+F 3 "~" H 7850 4750 50  0001 C CNN
+	1    7850 4750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -597,17 +589,6 @@ F 3 "" H 5450 5050 50  0001 C CNN
 $EndComp
 Connection ~ 8250 2600
 $Comp
-L Power:GND #PWR07
-U 1 1 6093378D
-P 5300 3100
-F 0 "#PWR07" H 5300 2850 50  0001 C CNN
-F 1 "GND" H 5305 2927 50  0000 C CNN
-F 2 "" H 5300 3100 50  0001 C CNN
-F 3 "" H 5300 3100 50  0001 C CNN
-	1    5300 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Power:GND #PWR011
 U 1 1 60932F2B
 P 8450 2600
@@ -621,17 +602,17 @@ $EndComp
 $Comp
 L Device:C C5
 U 1 1 6093070F
-P 5300 2850
-F 0 "C5" H 5350 2950 50  0000 L CNN
-F 1 "u1" H 5350 2750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5338 2700 50  0001 C CNN
-F 3 "~" H 5300 2850 50  0001 C CNN
-	1    5300 2850
+P 5900 2850
+F 0 "C5" H 5950 2950 50  0000 L CNN
+F 1 "100n" H 5950 2750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5938 2700 50  0001 C CNN
+F 3 "~" H 5900 2850 50  0001 C CNN
+	1    5900 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7350 2500 7550 2500
-Connection ~ 7550 1900
+Connection ~ 7650 1900
 Wire Wire Line
 	7450 2400 8150 2400
 Connection ~ 7450 2400
@@ -676,23 +657,23 @@ Wire Wire Line
 Wire Wire Line
 	8150 2400 8150 2000
 Wire Wire Line
-	7550 1900 7350 1900
+	7650 1900 7350 1900
 Wire Wire Line
-	7550 1700 7550 1900
+	7650 1700 7650 1900
 Connection ~ 7450 1300
 Wire Wire Line
-	7550 1300 7550 1400
+	7650 1300 7650 1400
 Wire Wire Line
-	7450 1300 7550 1300
+	7450 1300 7650 1300
 $Comp
 L Device:R R8
 U 1 1 6090429E
-P 7550 1550
-F 0 "R8" V 7600 1650 50  0000 L CNN
-F 1 "10K" V 7600 1300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7480 1550 50  0001 C CNN
-F 3 "~" H 7550 1550 50  0001 C CNN
-	1    7550 1550
+P 7650 1550
+F 0 "R8" V 7700 1650 50  0000 L CNN
+F 1 "10K" V 7700 1300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7580 1550 50  0001 C CNN
+F 3 "~" H 7650 1550 50  0001 C CNN
+	1    7650 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -812,7 +793,7 @@ Wire Wire Line
 Wire Wire Line
 	8350 4000 8350 4300
 Wire Wire Line
-	7650 4300 8350 4300
+	7850 4300 8350 4300
 Connection ~ 8350 4000
 Wire Wire Line
 	8350 3350 8350 4000
@@ -830,7 +811,7 @@ Wire Wire Line
 	6400 4300 6400 4100
 Connection ~ 6400 4300
 Wire Wire Line
-	7350 2600 7950 2600
+	7350 2600 7450 2600
 NoConn ~ 5950 2300
 Wire Wire Line
 	10250 3450 8250 3450
@@ -857,9 +838,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 2100 5950 2100
 Wire Wire Line
-	5300 2700 5300 2600
-Wire Wire Line
-	4850 4200 6300 4200
+	4850 4200 5950 4200
 Wire Wire Line
 	5350 4300 6200 4300
 Wire Wire Line
@@ -879,4 +858,79 @@ Wire Wire Line
 	5250 3750 4750 3750
 Connection ~ 4750 3750
 NoConn ~ 3800 2300
+Wire Wire Line
+	7850 5000 7850 4900
+Wire Wire Line
+	7300 5000 7600 5000
+$Comp
+L Device:C C9
+U 1 1 60CFAD69
+P 7600 4750
+F 0 "C9" H 7600 4850 50  0000 L CNN
+F 1 "100n" H 7600 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7638 4600 50  0001 C CNN
+F 3 "~" H 7600 4750 50  0001 C CNN
+	1    7600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4500 7600 4500
+Wire Wire Line
+	7600 4500 7600 4600
+Wire Wire Line
+	7600 4900 7600 5000
+Connection ~ 7600 5000
+Wire Wire Line
+	7600 5000 7850 5000
+$Comp
+L Device:C C8
+U 1 1 60D23BED
+P 6200 4750
+F 0 "C8" H 6200 4850 50  0000 L CNN
+F 1 "100n" H 6200 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6238 4600 50  0001 C CNN
+F 3 "~" H 6200 4750 50  0001 C CNN
+	1    6200 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 60D247AF
+P 5950 4750
+F 0 "C7" H 5950 4850 50  0000 L CNN
+F 1 "100n" H 5950 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5988 4600 50  0001 C CNN
+F 3 "~" H 5950 4750 50  0001 C CNN
+	1    5950 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5000 6200 5000
+Connection ~ 6400 5000
+Wire Wire Line
+	6200 4900 6200 5000
+Connection ~ 6200 5000
+Wire Wire Line
+	6200 4600 6200 4500
+Connection ~ 6200 4500
+Wire Wire Line
+	5950 4600 5950 4200
+Connection ~ 5950 4200
+Wire Wire Line
+	5950 4200 6300 4200
+Wire Wire Line
+	5950 5000 5950 4900
+Wire Wire Line
+	5950 5000 6200 5000
+Wire Wire Line
+	5900 2700 5900 2600
+Wire Wire Line
+	7450 2600 7450 3050
+Wire Wire Line
+	7450 3050 5900 3050
+Wire Wire Line
+	5900 3050 5900 3000
+Connection ~ 7450 2600
+Wire Wire Line
+	7450 2600 7950 2600
 $EndSCHEMATC
